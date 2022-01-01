@@ -1,19 +1,27 @@
 # Learn In Public Series
 
-## Dom Manipulation - Interpolating CSS strings into JavaScript functions
+## Dom Manipulation Goal - Edit div height and width on screen resize
 
 ### Resources
 
-#### Interpolation
+The MDN resource down below was the catalyst for this project, very inspiring and informative. Perhaps a little too conscise? Or I just need way more prerequisite knowledge. Either way it helped me accomplish my goal.
 
-- stack overflow <https://stackoverflow.com/questions/40106822/how-do-i-interpolate-js-variables-into-css-classes>
+- MDN onresize <https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event>
+ 
+- stack overflow interpolation <https://stackoverflow.com/questions/40106822/how-do-i-interpolate-js-variables-into-css-classes>
 
 ### Explorations
 
-`function addWidth() {
-picture.style.width = screenSizeX;
-}`
+This was something that very recently was just out of reach and so I'm glad that my reading and research and continued use of JavaScript has paid off. I can think of tons of good use cases for being able to update the width and height of an element according to browser size.
 
-Didn't work, I feel like a string interpolation would be a good way to save the width number. As of now screenSizeX is typeof number.
+Now It feels like I've done the hard work. Next is to explore where it can take me..
 
-Secret is to concatenate the NUMBER with a string of px
+An important clue for me was logging the typeof for the browser variable. It was a number. If I was going to transfer this number in I would have to concatenate it with a small string of 'px'.
+
+Another thing that tripped me up was the syntax of window.onresize... It should have been 
+
+window.onresize functionName;
+
+not
+
+window.onresize(functionName());
