@@ -16,11 +16,11 @@ This was something that very recently was just out of reach and so I'm glad that
 
 Now It feels like I've done the hard work. Next is to explore where it can take me..
 
-An important clue for me was logging the typeof for the browser variable. It was a number. If I was going to transfer this number in I would have to concatenate it with a small string of 'px'.
+An important clue for me was logging the typeof for the browser variable. It was a number. If I was going to transfer this number into a CSS value, I would have to concatenate the variable with a small string of 'px'.
 
 Another thing that tripped me up was the syntax of window.onresize... It should have been 
 
-window.onresize functionName;
+window.onresize = functionName;
 
 not
 
