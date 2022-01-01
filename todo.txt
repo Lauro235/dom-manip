@@ -12,3 +12,16 @@ Allocate screen width to div.pic1
 
 remove width from div.pic1 css
 
+I've found away to update the CSS width on reload
+
+Now all I need to do is make the width change as the window grows and shrinks
+
+I've done it!
+
+I made the mistake of writing...
+
+window.onresize(findWindowSize())
+
+This wasn't working the way I wanted it to. Instead this worked as desired.
+
+window.onresize = findWindowSize;
