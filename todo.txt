@@ -1,0 +1,14 @@
+change colour of body to blue
+
+upload 3 images into assets
+
+Give div.pic1 a background image
+
+Create variable for div.pic1
+
+Check console.log(picture); shows
+
+Allocate screen width to div.pic1
+
+remove width from div.pic1 css
+
