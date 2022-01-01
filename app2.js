@@ -4,17 +4,15 @@
 let browserWindowY = window.innerHeight;
 let browserWindowX = window.innerWidth;
 
-const fixedWidth = '800px'
+// const fixedWidth = '800px'
 const picture = document.querySelector('.pic1');
 
+function findWindowSize() {
+        picture.style.width = window.innerWidth + 'px';
+        picture.style.height = window.innerHeight + 'px';
+}
 
-picture.style.width = browserWindowX + 'px';
-
-// function findWindowSize() {
-//     picture.style.width = browserWindowX + 'px';
-// }
-
-// window.onload(findWindowSize);
+window.onresize = findWindowSize;
 
 
 let newColor = '#4B0082';
